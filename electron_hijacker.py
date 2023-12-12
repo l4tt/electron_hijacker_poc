@@ -82,7 +82,7 @@ class Hijack(Messages):
 
     def gen_jwt(self) -> bool:
         try:
-            data = httpx.get(API_ENDPOINT + "/94a055ed-d672-450c-94a9-1359c0510bfa/electron/launch/new?i={self.online_user_id}", headers=self.headers).json()
+            data = httpx.get(API_ENDPOINT + f"/94a055ed-d672-450c-94a9-1359c0510bfa/electron/launch/new?i={self.online_user_id}", headers=self.headers).json()
             launch_url = data['launchUrl']
             launchid = data['launchId']
             self.online_user_id = launchid
