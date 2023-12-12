@@ -1,3 +1,6 @@
+### rune new discord
+https://discord.gg/runesupport 
+
 ## Overview (Patched)
 
 The POC demonstrates how an attacker could use the JWT instance ID to hijack session tokens of Electron applications, specifically when the application communicates with certain APIs, Ps - Please make sure to change the session cookie or it will return "Failed to get recent online user"
