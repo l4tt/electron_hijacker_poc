@@ -1,5 +1,5 @@
 ### rune new discord
-https://discord.gg/runesupport 
+https://discord.gg/vision 
 
 ## Overview (Patched)
 
