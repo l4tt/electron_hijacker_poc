@@ -1,7 +1,7 @@
 from __init__ import VERSION, API_ENDPOINT
 import httpx, colorama
 """
-Since, there API is gay make sure to use a VPN or a proxy, since they decide to ban your IP with CF WAF
+Since their API is gay, make sure to use a VPN or a proxy, since they decide to ban your IP with CF WAF
 """
 
 colorama.init()
@@ -24,13 +24,13 @@ class Hijack(Messages):
 
     def start_hijack(self):
         if not self.get_online_count():
-            return print(f"{self.ERROR}Failed to get recent online user")
+            return print(f"{self.ERROR}Failed to get recent online users")
 
         print(f"{self.SUCCESS}Electron online user InstanceID: {self.online_user_id}")
         print(f"{self.SUCCESS}Electron online total users: {self.online_count}")
         
         if not self.gen_jwt():
-            return print(f"{self.ERROR}Failed to gen an launch JWT token for electron")
+            return print(f"{self.ERROR}Failed to gen an launch JWT token for Electron")
         
         print(f"{self.SUCCESS}Electron Launch URL: {self.jwt_url}")
         print(f"{self.SUCCESS}Waiting for you to launch the URL...")
@@ -39,7 +39,7 @@ class Hijack(Messages):
         
         
         while not self.get_jwt_status():
-            print(f"{self.ERROR}Electron JWT token status is invalid, waiting to be authincated")
+            print(f"{self.ERROR}Electron JWT token status is invalid, waiting to be authenticated")
         
         print(f"{self.SUCCESS}Spoofed user ID to {self.online_user_id}")
 
